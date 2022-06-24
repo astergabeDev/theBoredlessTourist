@@ -50,7 +50,7 @@ def find_attractions(destination, interests):
 
         for interest in interests:
             if interest in attraction_tags:
-                attractions_with_interest.append(possible_attraction)
+                attractions_with_interest.append(possible_attraction[0])
                 return attractions_with_interest
 
 la_arts = find_attractions("Los Angeles, USA", ['art'])
